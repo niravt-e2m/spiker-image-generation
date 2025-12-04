@@ -1,5 +1,5 @@
-const SUPABASE_URL = 'https://xozstuskilqluzkkqjep.supabase.co';
-const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InhvenN0dXNraWxxbHV6a2txamVwIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc2MzM1MzgxNywiZXhwIjoyMDc4OTI5ODE3fQ.sVyQkKErmL2PnzEVdvzA9segUEnVOmy4DJW34nhT3hc';
+const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL;
+const SUPABASE_KEY = import.meta.env.VITE_SUPABASE_ANON_KEY;
 
 export interface ImageGeneration {
   id: string;
