@@ -1,6 +1,12 @@
 [build]
 builder = "NIXPACKS"
-buildCommand = "npm install && npm run build"
+buildCommand = "npm ci && npm run build"
+
+[build.nixpacksPlan]
+providers = []
+
+[build.nixpacksOptions]
+packageManager = "npm"
 
 [deploy]
 startCommand = "npm start"
